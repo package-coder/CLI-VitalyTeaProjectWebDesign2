@@ -51,6 +51,18 @@ body{
 }
 
 
+.cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart__number{
+    font-size: 0.8rem;
+    margin-left: 5px;
+}
+
+
 .flex{
     display: flex;
 }
