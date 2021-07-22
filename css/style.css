@@ -5,7 +5,6 @@
 *::before{
     margin: 0;
     box-sizing: border-box;
-    line-height: 1.3rem;
 }
 
 
@@ -23,15 +22,103 @@ a{
 
 body{
     background-color: var(--color-bg);
+    font-family: 'Poppins', sans-serif;
 }
+
+
 
 .content{
     padding: 1.5rem 2rem;
 }
 
+.content--1x{
+    padding: 1rem 1.5rem;
+}
+
+
+.feature-block{
+
+}
+
+.feature-block__header{
+    color: var(--color-primary);
+
+}
+
+.feature-block__heading--1x{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.feature-block__heading{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.feature-block__subheading{
+    font-size: 1rem;
+    color: var(--color-light-primary);
+}
+
+.feature-block__content{
+    margin: 1rem 0;
+}
+
+.feature-block--tile{
+
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.feature-block--image-div{
+    overflow: hidden;
+    width: 80vw;
+    margin: 0 auto;
+
+    height: 60vh;
+    transition: 0.10s all ease-in-out;
+}
+
+.feature-block--image-div:hover > .feature-block--image{
+    transform: scale(1.5);
+}
+
+.feature-block--image{
+    object-position: center;  
+}
+
+.feature-block__subcontent{
+    
+}
+
+.feature-block__subcontent--header{
+    margin-top: 0.8rem;
+}
+
+.feature-block__subcontent--heading{
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--color-primary);
+}
+
+.feature-block__subcontent--subheading{
+
+}
+
+.feature-block__footer{
+
+}
+
+
+
+
+
+
+
 
 .nav-bar{
-    font-family: 'Poppins', sans-serif;
+
 }
 
 .nav-bar__header{
@@ -50,6 +137,59 @@ body{
     color: var(--color-primary);
 }
 
+.nav-bar__footer{
+    color: var(--color-light-primary);
+    font-size: 0.8rem;
+}
+
+.nav-bar--footer .nav-bar--items{
+    margin: 0.8rem;
+}
+
+
+.home-page{
+    height: 100vh;
+    background-image: url(/images/picture.webp);
+}
+
+.home-page .feature-block__header{
+    color: white;
+}
+
+.home-page .feature-block__heading{
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.home-header{
+    background-color: var(--color-primary);
+}
+
+.home-header .feature-block__heading{
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--color-bg);
+}
+
+
+
+.iconized{
+    font-size: 1.3rem;
+    margin: 0.3rem;
+    color: var(--color-primary);
+}
+
+.textfield{
+    border: 1px solid var(--color-primary);
+    padding: 0.35rem 1.3rem;
+}
+
+.button{
+    color: white;
+    background-color: var(--color-primary);
+    padding: 0.4rem 1.3rem;
+    border-width: 0;
+}
 
 .cart{
     display: flex;
@@ -62,6 +202,9 @@ body{
     margin-left: 5px;
 }
 
+.margin-bottom{
+    margin-bottom: 1rem;
+}
 
 .flex{
     display: flex;
@@ -84,6 +227,39 @@ body{
     justify-content: space-between;
 }
 
-.flex--align-between{
+.flex--align-center{
+    align-items: center;
+}
 
+.grid{
+    display: grid;
+}
+
+.grid--1x1{
+    grid-template-columns: 1f;
+    grid-template-rows: 1fr;
+}
+
+.grid-gap--2x{
+    grid-gap: 1.5rem;
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+
+
+
+@media screen and (min-width: 800px) {
+    
+    .grid--1x3{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .feature-block--image-div{
+        width: 30vw;
+    }
 }
