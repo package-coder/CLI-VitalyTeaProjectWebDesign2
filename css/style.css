@@ -65,10 +65,8 @@ body{
 }
 
 .feature-block--tile{
-
     width: 100%;
     margin: 0 auto;
-
 }
 
 .feature-block--image-div{
@@ -149,7 +147,7 @@ body{
 
 .home-page{
     height: 100vh;
-    background-image: url(/images/picture.webp);
+    background-image: url(../images/picture.webp);
 }
 
 .home-page .feature-block__header{
@@ -171,6 +169,19 @@ body{
     color: var(--color-bg);
 }
 
+
+.home-sale{
+
+}
+
+.home-sale .feature-block--image-div{
+    width: 100%;
+    height: 80vh;
+}
+
+.home-sale .feature-block--image-div:hover .feature-block--image{
+    transform: none;
+}
 
 
 .iconized{
