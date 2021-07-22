@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Vitaly Tea</title>
+    
+    <script src="https://kit.fontawesome.com/5516339156.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header nav-bar">
+        <nav class="nav-bar__header content flex flex--row flex--justify-between">
+            <div class="collapsible expandable flex flex--align-center">
+                <i class="fas fa-bars expandable-button"></i>
+                <ul class="collapsible2__content collapsible--content flex expandable-items margin-items">
+                    <li>
+                        <a class="nav-bar--items" href="index/shop.html">Shop</a>
+                    </li>
+                    <li>
+                        <a class="nav-bar--items" href="">Services</a>
+                    </li>
+                    <li>
+                        <a class="nav-bar--items" href="">About</a>
+                    </li>
+                    <li>
+                        <a class="nav-bar--items" href="">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="index.html" class="nav-logo nav-bar__heading">
+                Vitaly Tea
+            </a>
+            <a href="#" class="nav-bar--items cart flex flex--row flex--end iconized">
+                <i class="cart__icon fas fa-shopping-basket"></i>
+                <p class="cart__number">0</p>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="cart-block feature-block content--1x margin-bottom">
+            <header class="feature-block__header">
+                <h1 class="feature-block__heading--1x">
+                    Shopping Basket
+                </h1>
+            </header>
+            
+            <ul class="feature-block__subheading">
+                <li>ITEM</li>
+                <li>QUANTITY</li>
+                <li>PRICE</li>
+            </ul>
+            <div class="feature-block__content">
+                <div class="cart-block--item">
+                    <div class="cart-block--remove-icon">
+                        x
+                    </div>
+                    <div class="cart-block--image">
+                        <img src="../images/picture.webp" alt="sample image" class="cart--image">
+                    </div>
+                    <div class="cart-block--item-name">
+                        <h3 class="feature-block__subcontent--heading flex flex--align-center flex--justify-between">
+                            Item 1
+                        </h3>
+                        <h3 class="feature-block__subcontent--subheading">
+                            $3.00
+                        </h3>
+                    </div>
+                    <div class="cart-block--quantity">
+                        <input type="text" size="1" maxlength="3" class="textfield">
+                    </div>
+                    <div class="cart-block--price">
+                        <h3 class="feature-block__subcontent--heading flex flex--align-center flex--justify-between">
+                            Item 1
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+
+            <footer class="feature-block__footer text-center">
+                <button class="button">Check out</button> 
+                
+            </footer>
+        </div>
+    </main>
+
+
+    <footer class="footer nav-bar nav-bar--footer">
+        <nav class="content flex flex--column flex--align-center flex--justify-between text-center">
+            <header class="nav-bar__header icons nav-bar--items">
+                <a href="" class="iconized">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="" class="iconized">
+                    <i class="fab fa-instagram-square "></i>
+                </a>
+                <a href="" class="iconized">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+                <a href="" class="iconized">
+                    <i class="fas fa-phone"></i>
+                </a>
+                </a>
+                <a href="" class="iconized">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </header>
+            <div class="nav-bar__content nav-bar--items">
+                <input type="text" class="textfield">
+                <button class="button">Sign Up</button>
+            </div>
+            <footer class="nav-bar__footer nav-bar--items">
+                <p>@copyright</p>
+            </footer>
+        </nav>
+    </footer>
+</body>
+</html>
