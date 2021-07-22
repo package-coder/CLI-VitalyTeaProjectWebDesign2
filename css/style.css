@@ -161,7 +161,7 @@ body{
     display: none;
 }
 
-.header .collapsible--content{
+.header .collapsible2__content{
     height: auto;
     width: auto;
     position: absolute;
@@ -172,7 +172,7 @@ body{
     padding: 1.5rem;
 }
 
-.header .collapsible--content .nav-bar--items{
+.header .collapsible2__content .nav-bar--items{
     color: var(--color-bg);
     font-size: 1.5rem;
     border-bottom: 1px solid lightgray;
@@ -230,7 +230,7 @@ body{
 
 
 .iconized{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin: 0.3rem;
     color: var(--color-primary);
 }
@@ -405,6 +405,21 @@ body{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
+    }
+
+    .header .collapsible2__content{
+        position: relative;
+        z-index: 0;
+        background-color: var(--color-bg);
+        top: 0;
+        left: 0;
+        padding: 0;
+    }
+    
+    .header .collapsible2__content .nav-bar--items{
+        color: var(--color-primary);
+        font-size: 1.1rem;
+        border: 0;
     }
 
     .grid--1x3{
