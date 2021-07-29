@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../images/icon.png">
     <link rel="apple-touch-icon" href="../images/icon.png">
-
 </head>
 <body>
     <header class="header nav-bar">
@@ -44,7 +43,7 @@
 
     <main>
         <div class="cart-block feature-block content--1x margin-bottom">
-            <header class="feature-block__header">
+            <header class="feature-block__header margin-bottom">
                 <h1 class="feature-block__heading--1x">
                     Shopping Basket
                 </h1>
@@ -55,7 +54,32 @@
                 <li>QUANTITY</li>
                 <li>PRICE</li>
             </ul>
-            <div class="feature-block__content">
+
+            <div class="feature-block__content margin-bottom">
+                <div class="cart-block--item">
+                    <div class="cart-block--remove-icon">
+                        x
+                    </div>
+                    <div class="cart-block--image">
+                        <img src="../images/picture.webp" alt="sample image" class="cart--image">
+                    </div>
+                    <div class="cart-block--item-name">
+                        <h3 class="feature-block__subcontent--heading flex flex--align-center flex--justify-between">
+                            Item 1
+                        </h3>
+                        <h3 class="feature-block__subcontent--subheading">
+                            $3.00
+                        </h3>
+                    </div>
+                    <div class="cart-block--quantity">
+                        <input type="text" size="1" maxlength="3" class="textfield">
+                    </div>
+                    <div class="cart-block--price">
+                        <h3 class="feature-block__subcontent--heading flex flex--align-center flex--justify-between">
+                            Item 1
+                        </h3>
+                    </div>
+                </div>
                 <div class="cart-block--item">
                     <div class="cart-block--remove-icon">
                         x
@@ -84,8 +108,7 @@
 
 
             <footer class="feature-block__footer text-center">
-                <button class="button">Check out</button> 
-                
+                <button class="button">Check out</button>     
             </footer>
         </div>
     </main>
